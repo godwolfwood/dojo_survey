@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>What's My Name?</title>
+    <link rel="stylesheet" type="text/css" 
+    href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="info">
+        <h4> Submitted info </h4>
+        <div class="left">
+          <p> Name:</p>
+          <p> Dojo Location:</p>
+          <p> Favorite Language:</p>
+          <p> Comment:</p>
+        </div>
+        <div class="right">
+          <p> {{web_name}} </p>
+          <p> {{web_location}} </p>
+          <p> {{web_lang}} </p>
+          <p> {{web_description}} </p>
+        </div> 
+        <a href="/" class="back_button">go back</a>
+      </div>
+    </div>
+  </body>
+</html>
